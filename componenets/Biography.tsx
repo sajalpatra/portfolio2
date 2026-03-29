@@ -30,7 +30,9 @@ export default function Biography() {
 
         {/* Right: About Me */}
         <div className="h-full p-8 bg-white rounded-3xl shadow-md border border-slate-200">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-slate-800">About Me</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-slate-800">
+            About Me
+          </h2>
           <p className="text-base md:text-lg text-slate-600 leading-8">
             I’m a passionate software engineer who loves building scalable web
             apps and exploring AI/ML technologies. Currently pursuing a B.Tech
