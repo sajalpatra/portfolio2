@@ -3,27 +3,39 @@ import { Code, Database, Cpu, Globe } from "lucide-react";
 
 export default function Skills() {
   const skills = [
+    { name: "C", icon: <Code className="w-6 h-6" /> },
+    { name: "Java", icon: <Code className="w-6 h-6" /> },
     { name: "JavaScript / TypeScript", icon: <Code className="w-6 h-6" /> },
-    { name: "React / Next.js", icon: <Globe className="w-6 h-6" /> },
+    {
+      name: "React / Next.js/React Native",
+      icon: <Globe className="w-6 h-6" />,
+    },
     { name: "Node.js / Express", icon: <Cpu className="w-6 h-6" /> },
-    { name: "Databases (SQL / MongoDB)", icon: <Database className="w-6 h-6" /> },
+    {
+      name: "Databases (SQL / MongoDB/PostgreSQL/Redis/Convex)",
+      icon: <Database className="w-6 h-6" />,
+    },
     { name: "Python / AI-ML Basics", icon: <Cpu className="w-6 h-6" /> },
     { name: "HTML / CSS / Tailwind", icon: <Globe className="w-6 h-6" /> },
+    { name: "Git / GitHub", icon: <Globe className="w-6 h-6" /> },
   ];
 
   return (
-    <section className="bg-gray-900  mx-auto px-4 py-10">
-      <h2 className="text-3xl font-bold text-center mb-8 text-gray-900  dark:text-gray-100">
+    <section
+      id="skills"
+      className="fade-up scroll-mt-28 bg-white mx-auto px-4 py-20 md:py-24"
+    >
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-slate-900">
         Skills
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-4 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-lg transition"
+            className="flex flex-col items-center min-h-40 justify-center p-6 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition"
           >
-            <div className="text-blue-500 dark:text-blue-400 mb-2">{skill.icon}</div>
-            <p className="text-gray-800 dark:text-gray-200 text-sm font-medium text-center">
+            <div className="text-sky-600 mb-3 scale-125">{skill.icon}</div>
+            <p className="text-slate-700 text-base font-semibold text-center leading-7">
               {skill.name}
             </p>
           </div>
