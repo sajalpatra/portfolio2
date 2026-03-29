@@ -1,11 +1,11 @@
 "use client";
+
 import { AnimatedTestimonialsDemo } from "@/componenets/ui/AnimatedTestimonialsDemo";
-import { motion } from "framer-motion";
 
 export default function Feedback() {
-  return(
-  <>
-  <AnimatedTestimonialsDemo/>
-  </>
+  return (
+    <section id="feedback" className="fade-up scroll-mt-28">
+      <AnimatedTestimonialsDemo />
+    </section>
   );
 }

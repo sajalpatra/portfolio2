@@ -4,7 +4,7 @@ import { Facebook, Instagram, Linkedin, Github } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-700 text-gray-300 py-5 ">
+    <footer className="fade-up bg-white text-slate-600 py-5 border-t border-slate-200">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         
         {/* Footer text */}
@@ -24,7 +24,7 @@ export default function Footer() {
             <Linkedin className="w-5 h-5 hover:text-blue-400 transition-colors" />
           </Link>
           <Link href="https://github.com/sajalpatra" target="_blank">
-            <Github className="w-5 h-5 hover:text-white transition-colors" />
+            <Github className="w-5 h-5 hover:text-slate-900 transition-colors" />
           </Link>
         </div>
       </div>
