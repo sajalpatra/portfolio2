@@ -144,6 +144,13 @@ export default function Hero() {
               >
                 Contact Me
               </Link>
+              <a
+                href="/resume.pdf"
+                download
+                className="rounded-xl border border-amber-400 bg-amber-50 px-6 py-3 text-sm font-semibold text-amber-700 transition hover:bg-amber-100"
+              >
+                Download Resume
+              </a>
             </motion.div>
 
             <motion.div

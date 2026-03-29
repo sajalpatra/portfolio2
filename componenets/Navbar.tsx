@@ -33,7 +33,7 @@ export default function Navbar() {
             className="h-8 w-8 rounded-full object-cover md:h-9 md:w-9"
             priority
           />
-          <span className="text-lg font-bold md:text-2xl">Sajal</span>
+          <span className="text-lg font-bold md:text-2xl">Port<span className="text-blue-700">folio</span></span>
         </Link>
 
         {/* Nav Links */}
