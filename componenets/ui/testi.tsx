@@ -45,7 +45,7 @@ export const AnimatedTestimonials = ({
 
   return (
     <div className="bg-slate-50 flex flex-col gap-8 items-center justify-center">
-      <h1 className="text-slate-900 font-bold mt-6 text-4xl">
+      <h1 className="text-slate-900 font-bold mt-6 text-3xl md:text-4xl">
         What People talk about me?
       </h1>
 
@@ -108,7 +108,7 @@ export const AnimatedTestimonials = ({
               exit={{ y: -20, opacity: 0 }}
               transition={{ duration: 0.2, ease: "easeInOut" }}
             >
-              <h3 className="text-2xl font-bold text-slate-900">
+              <h3 className="text-xl md:text-2xl font-bold text-slate-900">
                 {testimonials[active].name}
               </h3>
               <p className="text-sm text-slate-500">

@@ -25,17 +25,19 @@ export default function Skills() {
       id="skills"
       className="fade-up scroll-mt-28 bg-white mx-auto px-4 py-20 md:py-24"
     >
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-slate-900">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 md:mb-12 text-slate-900">
         Skills
       </h2>
-      <div className="mx-auto grid max-w-6xl grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-7">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center min-h-40 justify-center p-6 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition"
+            className="flex flex-col items-center min-h-32 sm:min-h-40 justify-center p-4 sm:p-6 bg-slate-50 rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition"
           >
-            <div className="text-sky-600 mb-3 scale-125">{skill.icon}</div>
-            <p className="text-slate-700 text-base font-semibold text-center leading-7">
+            <div className="text-sky-600 mb-2 sm:mb-3 scale-110 sm:scale-125">
+              {skill.icon}
+            </div>
+            <p className="text-slate-700 text-sm sm:text-base font-semibold text-center leading-6 sm:leading-7">
               {skill.name}
             </p>
           </div>

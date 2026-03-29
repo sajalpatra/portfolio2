@@ -32,7 +32,7 @@ export default function Projects() {
       className="fade-up scroll-mt-28 py-24 md:py-28 bg-gradient-to-br from-white via-slate-50 to-blue-50 text-slate-900"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-14 text-slate-900">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 md:mb-14 text-slate-900">
           Projects
         </h2>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-9">
