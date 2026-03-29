@@ -5,6 +5,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -138,18 +139,79 @@ export default function Hero() {
               >
                 View Projects
               </Link>
-              <Link
-                href="#contact"
-                className="rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:bg-slate-100"
+              <motion.div
+                className="relative overflow-hidden rounded-xl border border-sky-300/50 bg-white/10 p-[1.5px] backdrop-blur-sm"
+                animate={{
+                  boxShadow: [
+                    "0 0 0 rgba(14,165,233,0.0)",
+                    "0 0 22px rgba(14,165,233,0.33)",
+                    "0 0 0 rgba(14,165,233,0.0)",
+                  ],
+                }}
+                transition={{
+                  duration: 3.2,
+                  ease: "easeInOut",
+                  repeat: Infinity,
+                }}
               >
-                Contact Me
-              </Link>
+                <motion.span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 bg-[linear-gradient(115deg,rgba(245,158,11,0.12)_12%,rgba(255,255,255,0.92)_50%,rgba(14,165,233,0.18)_88%)] bg-[length:240%_100%]"
+                  animate={{ backgroundPosition: ["200% 50%", "-40% 50%"] }}
+                  transition={{
+                    duration: 2.2,
+                    ease: "linear",
+                    repeat: Infinity,
+                  }}
+                />
+                <Link
+                  href="#contact"
+                  className="relative block rounded-[11px] border border-white/50 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-800 transition hover:bg-white/20"
+                >
+                  Contact Me
+                </Link>
+              </motion.div>
               <a
                 href="/resume.pdf"
                 download
                 className="rounded-xl border border-amber-400 bg-amber-50 px-6 py-3 text-sm font-semibold text-amber-700 transition hover:bg-amber-100"
               >
                 Download Resume
+              </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.42 }}
+              className="mt-5 flex flex-wrap items-center gap-3"
+            >
+              <a
+                href="https://www.linkedin.com/in/sajal-patra-975007275/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-blue-300 hover:text-blue-600"
+              >
+                <Linkedin className="h-4 w-4" />
+                LinkedIn
+              </a>
+              <a
+                href="https://www.instagram.com/sajalpatra2005/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-pink-300 hover:text-pink-600"
+              >
+                <Instagram className="h-4 w-4" />
+                Instagram
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61552904974369"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-sky-300 hover:text-sky-600"
+              >
+                <Facebook className="h-4 w-4" />
+                Facebook
               </a>
             </motion.div>
 
@@ -184,14 +246,27 @@ export default function Hero() {
             className="mx-auto w-full max-w-[18rem] sm:max-w-md"
           >
             <div className="rounded-3xl border border-slate-300/80 bg-white/90 p-4 sm:p-7 shadow-[0_20px_55px_rgba(148,163,184,0.28)] backdrop-blur-sm">
-              <Image
-                src="/image/profile.jpeg"
-                alt="Sajal Profile"
-                width={420}
-                height={460}
-                className="h-64 w-full rounded-2xl object-cover sm:h-[24rem] md:h-[28rem]"
-                priority
-              />
+              <motion.div
+                className="rounded-2xl bg-[linear-gradient(130deg,#f59e0b,#0284c7,#f59e0b)] bg-[length:240%_240%] p-[2px]"
+                animate={{
+                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  boxShadow: [
+                    "0 0 0 rgba(245,158,11,0.0)",
+                    "0 0 26px rgba(14,165,233,0.32)",
+                    "0 0 0 rgba(245,158,11,0.0)",
+                  ],
+                }}
+                transition={{ duration: 6.8, ease: "linear", repeat: Infinity }}
+              >
+                <Image
+                  src="/image/profile.jpeg"
+                  alt="Sajal Profile"
+                  width={420}
+                  height={460}
+                  className="h-64 w-full rounded-[0.95rem] object-cover sm:h-[24rem] md:h-[28rem]"
+                  priority
+                />
+              </motion.div>
 
               <div className="mt-4 rounded-xl border border-slate-200 bg-slate-50/80 p-3 sm:mt-5 sm:p-4">
                 <p className="text-sm font-medium text-slate-800">Sajal</p>
