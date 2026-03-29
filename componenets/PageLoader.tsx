@@ -70,7 +70,9 @@ export default function PageLoader() {
               />
             </div>
 
-            <p className="mt-3 text-center text-xs text-slate-500">{progress}%</p>
+            <p className="mt-3 text-center text-xs text-slate-500">
+              {progress}%
+            </p>
           </div>
         </motion.div>
       )}

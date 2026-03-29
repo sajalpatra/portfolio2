@@ -15,22 +15,40 @@ export default function Navbar() {
           <Link href="#home" className="hover:text-amber-600 transition-colors">
             Home
           </Link>
-          <Link href="#about" className="hover:text-amber-600 transition-colors">
+          <Link
+            href="#about"
+            className="hover:text-amber-600 transition-colors"
+          >
             About
           </Link>
-          <Link href="#skills" className="hover:text-amber-600 transition-colors">
+          <Link
+            href="#skills"
+            className="hover:text-amber-600 transition-colors"
+          >
             Skills
           </Link>
-          <Link href="#projects" className="hover:text-amber-600 transition-colors">
+          <Link
+            href="#projects"
+            className="hover:text-amber-600 transition-colors"
+          >
             Projects
           </Link>
-          <Link href="#achievements" className="hover:text-amber-600 transition-colors">
+          <Link
+            href="#achievements"
+            className="hover:text-amber-600 transition-colors"
+          >
             Achievements
           </Link>
-          <Link href="#feedback" className="hover:text-amber-600 transition-colors">
+          <Link
+            href="#feedback"
+            className="hover:text-amber-600 transition-colors"
+          >
             Feedback
           </Link>
-          <Link href="#contact" className="hover:text-amber-600 transition-colors">
+          <Link
+            href="#contact"
+            className="hover:text-amber-600 transition-colors"
+          >
             Contact
           </Link>
         </div>

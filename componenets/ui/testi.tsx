@@ -67,7 +67,7 @@ export const AnimatedTestimonials = ({
                       opacity: isActive(index) ? 1 : 0.7,
                       scale: isActive(index) ? 1 : 0.95,
                       z: isActive(index) ? 0 : -100,
-                      rotate: isActive(index) ? 0 : rotations[index] ?? 0,
+                      rotate: isActive(index) ? 0 : (rotations[index] ?? 0),
                       zIndex: isActive(index)
                         ? 40
                         : testimonials.length + 2 - index,

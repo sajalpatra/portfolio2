@@ -23,7 +23,7 @@ export default function ScrollAnimations() {
               start: "top 88%",
               once: true,
             },
-          }
+          },
         );
       });
     });

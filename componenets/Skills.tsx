@@ -6,17 +6,25 @@ export default function Skills() {
     { name: "C", icon: <Code className="w-6 h-6" /> },
     { name: "Java", icon: <Code className="w-6 h-6" /> },
     { name: "JavaScript / TypeScript", icon: <Code className="w-6 h-6" /> },
-    { name: "React / Next.js/React Native", icon: <Globe className="w-6 h-6" /> },
+    {
+      name: "React / Next.js/React Native",
+      icon: <Globe className="w-6 h-6" />,
+    },
     { name: "Node.js / Express", icon: <Cpu className="w-6 h-6" /> },
-    { name: "Databases (SQL / MongoDB/PostgreSQL/Redis/Convex)", icon: <Database className="w-6 h-6" /> },
+    {
+      name: "Databases (SQL / MongoDB/PostgreSQL/Redis/Convex)",
+      icon: <Database className="w-6 h-6" />,
+    },
     { name: "Python / AI-ML Basics", icon: <Cpu className="w-6 h-6" /> },
     { name: "HTML / CSS / Tailwind", icon: <Globe className="w-6 h-6" /> },
     { name: "Git / GitHub", icon: <Globe className="w-6 h-6" /> },
-    
   ];
 
   return (
-    <section id="skills" className="fade-up scroll-mt-28 bg-white mx-auto px-4 py-20 md:py-24">
+    <section
+      id="skills"
+      className="fade-up scroll-mt-28 bg-white mx-auto px-4 py-20 md:py-24"
+    >
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-slate-900">
         Skills
       </h2>

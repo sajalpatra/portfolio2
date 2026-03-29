@@ -1,5 +1,10 @@
 "use client";
-import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -29,7 +34,7 @@ export default function Hero() {
           second: "2-digit",
           hour12: true,
           timeZone: "Asia/Kolkata",
-        })
+        }),
       );
     };
 
@@ -117,8 +122,8 @@ export default function Hero() {
               transition={{ duration: 0.85, delay: 0.2 }}
               className="mt-7 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl"
             >
-              I am Sajal, focused on creating performant, user-friendly applications
-              with clean architecture and thoughtful design.
+              I am Sajal, focused on creating performant, user-friendly
+              applications with clean architecture and thoughtful design.
             </motion.p>
 
             <motion.div
@@ -164,36 +169,40 @@ export default function Hero() {
             </motion.div>
           </div>
 
-        <motion.div
-          initial={{ opacity: 0, x: 35 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.9, delay: 0.2 }}
-          style={{ y: imageY }}
-          className="mx-auto w-full max-w-md"
-        >
-          <div className="rounded-3xl border border-slate-300/80 bg-white/90 p-7 shadow-[0_20px_55px_rgba(148,163,184,0.28)] backdrop-blur-sm">
-            <Image
-              src="/image/profile.jpeg"
-              alt="Sajal Profile"
-              width={420}
-              height={460}
-              className="h-[28rem] w-full rounded-2xl object-cover"
-              priority
-            />
+          <motion.div
+            initial={{ opacity: 0, x: 35 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, delay: 0.2 }}
+            style={{ y: imageY }}
+            className="mx-auto w-full max-w-md"
+          >
+            <div className="rounded-3xl border border-slate-300/80 bg-white/90 p-7 shadow-[0_20px_55px_rgba(148,163,184,0.28)] backdrop-blur-sm">
+              <Image
+                src="/image/profile.jpeg"
+                alt="Sajal Profile"
+                width={420}
+                height={460}
+                className="h-[28rem] w-full rounded-2xl object-cover"
+                priority
+              />
 
-            <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50/80 p-4">
-              <p className="text-sm font-medium text-slate-800">Sajal</p>
-              <p className="mt-1 text-sm text-slate-500">Full-Stack Developer and AI Enthusiast</p>
-              <div className="mt-3 flex items-center justify-between rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs">
-                <span className="inline-flex items-center gap-2 text-emerald-700">
-                  <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-                  Available for projects
-                </span>
-                <span className="font-medium text-slate-600">{localTime || "--:--:--"}</span>
+              <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+                <p className="text-sm font-medium text-slate-800">Sajal</p>
+                <p className="mt-1 text-sm text-slate-500">
+                  Full-Stack Developer and AI Enthusiast
+                </p>
+                <div className="mt-3 flex items-center justify-between rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs">
+                  <span className="inline-flex items-center gap-2 text-emerald-700">
+                    <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
+                    Available for projects
+                  </span>
+                  <span className="font-medium text-slate-600">
+                    {localTime || "--:--:--"}
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
         </div>
       </motion.div>
     </motion.section>

@@ -10,17 +10,16 @@ import Contact from "@/componenets/Contact";
 export default function Home() {
   return (
     <>
-    <main>
-       <Hero/>
-       <Biography/>
-       <Skills/>
-       <Projects/>
-       <Achievements/>
-       <Feedback/>
-      <Contact/>
-       <Footer/>
-    </main>
-    
+      <main>
+        <Hero />
+        <Biography />
+        <Skills />
+        <Projects />
+        <Achievements />
+        <Feedback />
+        <Contact />
+        <Footer />
+      </main>
     </>
   );
 }
