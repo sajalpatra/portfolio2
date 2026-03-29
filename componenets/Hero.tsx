@@ -90,7 +90,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 26 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, delay: 0.05 }}
-              className="max-w-3xl text-4xl font-bold leading-[1.1] text-slate-900 sm:text-5xl md:text-6xl lg:text-7xl"
+              className="max-w-3xl text-3xl font-bold leading-[1.1] text-slate-900 sm:text-5xl md:text-6xl lg:text-7xl"
             >
               Building reliable digital products with modern web technologies.
             </motion.h1>
@@ -174,19 +174,19 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, delay: 0.2 }}
             style={{ y: imageY }}
-            className="mx-auto w-full max-w-md"
+            className="mx-auto w-full max-w-[18rem] sm:max-w-md"
           >
-            <div className="rounded-3xl border border-slate-300/80 bg-white/90 p-7 shadow-[0_20px_55px_rgba(148,163,184,0.28)] backdrop-blur-sm">
+            <div className="rounded-3xl border border-slate-300/80 bg-white/90 p-4 sm:p-7 shadow-[0_20px_55px_rgba(148,163,184,0.28)] backdrop-blur-sm">
               <Image
                 src="/image/profile.jpeg"
                 alt="Sajal Profile"
                 width={420}
                 height={460}
-                className="h-[28rem] w-full rounded-2xl object-cover"
+                className="h-64 w-full rounded-2xl object-cover sm:h-[24rem] md:h-[28rem]"
                 priority
               />
 
-              <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+              <div className="mt-4 rounded-xl border border-slate-200 bg-slate-50/80 p-3 sm:mt-5 sm:p-4">
                 <p className="text-sm font-medium text-slate-800">Sajal</p>
                 <p className="mt-1 text-sm text-slate-500">
                   Full-Stack Developer and AI Enthusiast
